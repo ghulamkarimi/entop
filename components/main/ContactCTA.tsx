@@ -9,7 +9,7 @@ const ContactCTA = () => {
           Kontaktieren Sie uns noch heute für weitere Informationen.
         </p>
         <a
-          href="mailto:info@deinefirma.de"
+          href="entop.sicherheit@hotmail.com"
           className="inline-block bg-yellow-300 text-black font-bold py-2 px-6 rounded-lg text-lg hover:bg-yellow-500 transition-colors"
         >
           Kontakt aufnehmen

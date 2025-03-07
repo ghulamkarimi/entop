@@ -23,11 +23,11 @@ return (
         </Link>
 
         <Link
-          href="mailto:karimiamirhossein12@gmail.com"
+          href="mailto:entop.sicherheit@hotmail.com"
           className="hidden md:flex items-center gap-2 hover:text-yellow-300"
         >
           <Mail size={16} />
-          <p>karimiamirhossein12@gmail.com</p>
+          <p>entop.sicherheit@hotmail.com</p>
         </Link>
 
         <Link
