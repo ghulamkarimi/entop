@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 const ContactCTA = () => {
     return (
       <div className=" my-6 text-center">
@@ -8,12 +10,12 @@ const ContactCTA = () => {
           Wir helfen Ihnen gerne weiter! <br />
           Kontaktieren Sie uns noch heute für weitere Informationen.
         </p>
-        <a
+        <Link
           href="entop.sicherheit@hotmail.com"
           className="inline-block bg-yellow-300 text-black font-bold py-2 px-6 rounded-lg text-lg hover:bg-yellow-500 transition-colors"
         >
           Kontakt aufnehmen
-        </a>
+        </Link>
       </div>
     );
   };
