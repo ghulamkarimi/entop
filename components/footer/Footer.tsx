@@ -78,7 +78,7 @@ const Footer = () => {
                   </Link>
                 </li>
                 <li>
-                  <Link href="entop.sicherheit@hotmail.com" className="text-gray-400">
+                  <Link href="mailto:entop.sicherheit@hotmail.com" className="text-gray-400">
                     ✉️ entop.sicherheit@hotmail.com
                   </Link>
                 </li>
