@@ -1,4 +1,7 @@
+
+"use client";
 import { Star, UserCircle } from "lucide-react";
+import { motion } from "framer-motion";
 
 const reviews = [
   {
@@ -41,7 +44,13 @@ const Rezension = () => {
         {/* Drei Bewertungen oben */}
         <div className="lg:col-span-3 grid lg:grid-cols-3 gap-8">
           {reviews.slice(0, 3).map((review, index) => (
-            <div key={index} className="bg-white p-6 rounded-2xl shadow-md">
+            <motion.div
+              key={index}
+              className="bg-white p-6 rounded-2xl shadow-md"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: index * 0.3 }}
+            >
               <div className="flex justify-center mb-4">
                 <UserCircle size={64} className="text-yellow-300" />
               </div>
@@ -54,14 +63,20 @@ const Rezension = () => {
                   ))}
               </div>
               <p className="font-bold text-gray-900">{review.name}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
 
         {/* Zwei Bewertungen unten */}
         <div className="lg:col-span-3 grid lg:grid-cols-2 gap-8">
           {reviews.slice(3, 5).map((review, index) => (
-            <div key={index} className="bg-white p-6 rounded-2xl shadow-md">
+            <motion.div
+              key={index}
+              className="bg-white p-6 rounded-2xl shadow-md"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 0.5, delay: (index + 3) * 0.3 }}
+            >
               <div className="flex justify-center mb-4">
                 <UserCircle size={64} className="text-yellow-300" />
               </div>
@@ -74,7 +89,7 @@ const Rezension = () => {
                   ))}
               </div>
               <p className="font-bold text-gray-900">{review.name}</p>
-            </div>
+            </motion.div>
           ))}
         </div>
       </div>

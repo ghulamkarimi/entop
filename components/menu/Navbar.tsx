@@ -38,7 +38,7 @@ const Navbar = () => {
           <li>
             <Link
               className="flex items-center gap-2 text-[14px] lg:text-[18px] text-gray-800 group"
-              href="/services"
+              href="/service"
             >
               <p className="font-medium group-hover:underline group-hover:underline-offset-8 group-hover:decoration-yellow-500 transition-all">
                 Unsere Leistungen
