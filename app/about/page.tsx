@@ -17,27 +17,24 @@ const Page = () => {
         className="w-full max-h-[600px] object-cover opacity-85 rounded-lg shadow-lg"
         src="/grup.jpg"
         alt="Gruppenbild"
-      
       />
 
       {/* Titel und Untertitel mit Animation */}
       <div className="flex flex-col items-center justify-center gap-4 mt-10 text-center">
-        <motion.h1
+        <h1
           className="text-5xl font-bold text-[#013766] border-b-4 border-yellow-300 pb-2"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: textInView ? 1 : 0, y: textInView ? 0 : -50 }}
-          transition={{ duration: 0.8 }}
+       
+          ref={textRef}
         >
           ENTOP
-        </motion.h1>
-        <motion.p
+        </h1>
+        <p
           className="text-xl text-gray-700 max-w-2xl border-b-4 pb-2 border-yellow-300"
-          initial={{ opacity: 0, y: -50 }}
-          animate={{ opacity: textInView ? 1 : 0, y: textInView ? 0 : -50 }}
-          transition={{ duration: 0.8, delay: 0.3 }}
+      
+          ref={textRef}
         >
           Wir sind ein engagiertes Team, das Sicherheit und Vertrauen schafft.
-        </motion.p>
+        </p>
       </div>
 
       {/* Hauptcontainer mit Animation */}
@@ -126,15 +123,26 @@ const Page = () => {
 
           {/* Eigenschaften mit Icons */}
           <div className="grid grid-cols-2 gap-2 text-gray-700 font-semibold">
-            {["Fachkundig", "Zuverlässig", "Verlässlich", "Reaktionsschnell", "Entschlossen", "Belastbar"].map((property, index) => (
+            {[
+              "Fachkundig",
+              "Zuverlässig",
+              "Verlässlich",
+              "Reaktionsschnell",
+              "Entschlossen",
+              "Belastbar",
+            ].map((property, index) => (
               <motion.div
                 key={index}
                 className="flex items-center gap-1"
                 initial={{ opacity: 0, x: index % 2 === 0 ? -100 : 100 }}
-                animate={{ opacity: textInView ? 1 : 0, x: textInView ? 0 : (index % 2 === 0 ? -100 : 100) }}
+                animate={{
+                  opacity: textInView ? 1 : 0,
+                  x: textInView ? 0 : index % 2 === 0 ? -100 : 100,
+                }}
                 transition={{ duration: 0.8, delay: index * 0.2 }}
               >
-                <Check className="text-green-600 bg-yellow-300 rounded-full p-0.5" /> {property}
+                <Check className="text-green-600 bg-yellow-300 rounded-full p-0.5" />{" "}
+                {property}
               </motion.div>
             ))}
           </div>

@@ -47,7 +47,7 @@ const TeamSection = () => {
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-bold mb-8">
           Unser Sicherheitsteam bei{" "}
-          <span className="bg-[#013766] px-2 py-1 rounded-lg text-yellow-300">
+          <span className="bg-[#013766] px-2 rounded-lg text-yellow-300">
             ENTOP
           </span>
         </h2>
