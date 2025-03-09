@@ -76,7 +76,7 @@ const MobileNavbar = () => {
               onClick={toggleMenu}
             >
               <p className="font-medium group-hover:underline group-hover:underline-offset-8 group-hover:decoration-yellow-500 transition-all">
-                Ansprechpartner
+                Kontakt
               </p>
             </Link>
           </li>

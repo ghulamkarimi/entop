@@ -16,7 +16,7 @@ const Page = () => {
       {/* Header-Bild mit Animation */}
       <img
         ref={imgRef}
-        className="w-full max-h-[600px] object-cover opacity-85 rounded-lg shadow-lg"
+        className="w-full max-h-[600px] object-cover  rounded-lg shadow-lg"
         src="/grup.jpg"
         alt="Gruppenbild"
       />
@@ -48,7 +48,7 @@ const Page = () => {
           transition={{ duration: 1, delay: 0.5 }}
         >
           <motion.img
-            src="/about1.jpg"
+            src="/doormen.jpg"
             alt="entop 1"
             className="w-full h-68 object-cover rounded-lg shadow-md row-span-2"
             initial={{ opacity: 0, x: -100 }}
@@ -56,7 +56,7 @@ const Page = () => {
             transition={{ duration: 0.8 }}
           />
           <motion.img
-            src="/about2.jpg"
+            src="/one.jpg"
             alt="entop 2"
             className="w-full h-32 object-cover rounded-lg shadow-md"
             initial={{ opacity: 0, x: 100 }}
@@ -64,7 +64,7 @@ const Page = () => {
             transition={{ duration: 0.8, delay: 0.2 }}
           />
           <motion.img
-            src="/about.jpg"
+            src="/ordnertätigkeit.jpg"
             alt="entop 3"
             className="w-full h-32 object-cover rounded-lg shadow-md"
             initial={{ opacity: 0, x: -100 }}
@@ -72,7 +72,7 @@ const Page = () => {
             transition={{ duration: 0.8, delay: 0.3 }}
           />
           <motion.img
-            src="/about3.jpg"
+            src="/event.jpg"
             alt="entop 4"
             className="w-full h-52 object-cover rounded-lg shadow-md col-span-2"
             initial={{ opacity: 0, x: 100 }}

@@ -8,7 +8,7 @@ import TeamSection from "@/components/team/TeamSection";
         <div className="mb-10">
             <img
                 className="w-full max-h-[600px] object-cover opacity-85 rounded-lg shadow-lg"
-                src="/about1.jpg"
+                src="/leistung.jpg"
                 alt="Gruppenbild"
             />
         </div>
