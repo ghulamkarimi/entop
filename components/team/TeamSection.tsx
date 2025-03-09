@@ -54,11 +54,16 @@ const TeamSection = () => {
   return (
     <section>
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-bold mb-8">
+        <h2 className="text-3xl flex flex-col gap-3 font-bold mb-8">
           Unser Sicherheitsteam bei{" "}
-          <span className="bg-[#013766] px-2 rounded-lg text-yellow-300">
+          <div className="flex justify-center items-center">
+    
+          <p className="bg-[#013766] px-2 py-2 flex justify-center gap-1 items-center rounded-lg  text-white">
+             <div className="w-6 border-b-3 border-yellow-300" />
             ENTOP
-          </span>
+            <div className="w-6 border-b-3 border-yellow-300" />
+          </p>
+          </div>
         </h2>
         <p className="text-lg mb-12 border-b-4 border-yellow-300 max-w-3xl mx-auto pb-4">
           Mit langjähriger Erfahrung bieten wir Ihnen umfassende

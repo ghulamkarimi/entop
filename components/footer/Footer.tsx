@@ -49,7 +49,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/kontakt"
+                  href="/service"
                   className="text-gray-400 hover:text-yellow-500"
                 >
                   Unsere Leistungen
@@ -57,7 +57,7 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/datenschutz"
+                  href="/job"
                   className="text-gray-400 hover:text-yellow-500"
                 >
                   Jobs
@@ -65,10 +65,10 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="/impressum"
+                  href="/team"
                   className="text-gray-400 hover:text-yellow-500"
                 >
-                  Ansprechpartner
+               Kontakt
                 </a>
               </li>
             </ul>
