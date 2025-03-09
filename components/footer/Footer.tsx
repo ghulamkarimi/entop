@@ -139,11 +139,14 @@ const Footer = () => {
           </p>
           <p className="text-xs text-gray-500 mt-2">
             Entwickelt von{" "}
-            <span className="text-yellow-400 font-semibold">
-              {" "}
-              Ghulam Karimi
-            </span>{" "}
-            {"-"} Webentwickler
+            <a
+              href="https://portofolio-ecru-five.vercel.app/de"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-yellow-400 font-semibold"
+            >
+              ai-webkraft
+            </a>
           </p>
         </div>
       </div>
