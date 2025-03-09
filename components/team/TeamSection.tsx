@@ -59,9 +59,9 @@ const TeamSection = () => {
           <div className="flex justify-center items-center">
     
           <p className="bg-[#013766] px-2 py-2 flex justify-center gap-1 items-center rounded-lg  text-white">
-             <div className="w-6 border-b-3 border-yellow-300" />
+          <div className="w-6 border-b-3 border-yellow-300" ></div>
             ENTOP
-            <div className="w-6 border-b-3 border-yellow-300" />
+            <div className="w-6 border-b-3 border-yellow-300" ></div>
           </p>
           </div>
         </h2>
