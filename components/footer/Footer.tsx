@@ -1,12 +1,12 @@
 "use client";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
+import { Mail, MapPin, Phone } from "lucide-react";
 
 const Footer = () => {
   const { ref, inView } = useInView({
-    triggerOnce: false, // Animation bei jedem Erscheinen im Viewport auslösen
-    threshold: 0.2, // Der Footer wird animiert, wenn 20% des Elements sichtbar sind
+    triggerOnce: false,
+    threshold: 0.2,
   });
 
   return (
@@ -80,24 +80,35 @@ const Footer = () => {
             <p className="text-gray-400 text-sm mb-2">
               Erreichen Sie uns über:
             </p>
-            <ul>
+            <ul className="space-y-2">
               <li>
-                <Link href="#" className="text-gray-400">
-                  📍 Musterstraße 123, 12345 Musterstadt
-                </Link>
-              </li>
-              <li>
-                <Link href="tel:+4917662919092" className="text-gray-400">
-                  📞 +49 176 629 190 92
-                </Link>
-              </li>
-              <li>
-                <Link
-                  href="mailto:entop.sicherheit@hotmail.com"
-                  className="text-gray-400"
+                <a
+                  href="https://www.google.com/maps?q=Zeppelinstraße+1,+65760+Eschborn"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-gray-400 flex items-center gap-2 hover:text-yellow-500"
                 >
-                  ✉️ entop.sicherheit@hotmail.com
-                </Link>
+                  <MapPin className="text-red-500" size={20} />
+                  <span>Zeppelinstraße 1, 65760 Eschborn</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="tel:+4917662919092"
+                  className="text-gray-400 flex items-center gap-2 hover:text-yellow-500"
+                >
+                  <Phone className="text-green-500" size={20} />
+                  <span>+49 176 629 190 92</span>
+                </a>
+              </li>
+              <li>
+                <a
+                  href="mailto:entop.sicherheit@hotmail.com"
+                  className="text-gray-400 flex items-center gap-2 hover:text-yellow-500"
+                >
+                  <Mail className="text-yellow-500" size={20} />
+                  <span>entop.sicherheit@hotmail.com</span>
+                </a>
               </li>
             </ul>
             <div className="mt-4">
@@ -107,7 +118,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-yellow-500 mr-4"
               >
-                <i className="fab fa-facebook-f"></i> Facebook
+                Facebook
               </a>
               <a
                 href="https://www.instagram.com"
@@ -115,7 +126,7 @@ const Footer = () => {
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-yellow-500"
               >
-                <i className="fab fa-instagram"></i> Instagram
+                Instagram
               </a>
             </div>
           </div>
@@ -125,6 +136,14 @@ const Footer = () => {
         <div className="mt-12 border-t border-yellow-300 pt-6 text-center">
           <p className="text-sm text-gray-400">
             &copy; 2025 ENTOP . Alle Rechte vorbehalten.
+          </p>
+          <p className="text-xs text-gray-500 mt-2">
+            Entwickelt von{" "}
+            <span className="text-yellow-400 font-semibold">
+              {" "}
+              Ghulam Karimi
+            </span>{" "}
+            {"-"} Webentwickler
           </p>
         </div>
       </div>
