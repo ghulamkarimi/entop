@@ -60,10 +60,10 @@ const person = [
   const Personal = () => {
     return (
       <div className="container mx-auto p-6">
-        <p className="flex items-center justify-center border-b-2 border-yellow-300 py-2">
+        <p className="flex items-center text-lg font-bold justify-center border-b-2 border-yellow-300 py-2">
           Immer ein offenes Ohr für Sie
         </p>
-        <h1 className="text-4xl font-bold text-center text-[#013766] mb-8">
+        <h1 className="text-4xl font-bold text-center text-[#013766] mb-8 py-6">
           Ihre Ansprechpartner
         </h1>
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
