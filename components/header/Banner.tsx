@@ -33,11 +33,11 @@ const Banner = () => {
             Service Rufnummer
           </h2>
           <Link
-            href="tel:0800123456"
+            href="tel:+49 176 629 190 92"
             className="text-white text-center flex gap-4 justify-center items-center text-lg md:text-2xl lg:text-4xl font-semibold group-hover:underline group-hover:underline-offset-8 group-hover:decoration-yellow-300 transition-all"
           >
-            <Phone className=" animate-bounce text-yellow-300" size={32} />
-            0800 123 456
+            <Phone className=" animate-pulse text-yellow-300" size={32} />
+            +49 176 629 190 92
           </Link>
         </div>
       </div>
