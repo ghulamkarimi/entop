@@ -137,6 +137,7 @@ const Footer = () => {
           <p className="text-sm text-gray-400">
             &copy; 2025 ENTOP . Alle Rechte vorbehalten.
           </p>
+          <p>Inahber Nasim Amiri</p>
           <p className="text-xs text-gray-500 mt-2">
             Entwickelt von{" "}
             <a
