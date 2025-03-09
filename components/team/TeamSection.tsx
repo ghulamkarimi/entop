@@ -4,40 +4,50 @@
 
 const teamMembers = [
   {
-    name: "Objektschutz und Baustellenbewachung",
+    name: "Gebäudeschutz/Objektschutz",
     role: "Unser Sicherheitspersonal überwacht und schützt Ihr Gebäude oder Ihre Baustelle rund um die Uhr. Wir sorgen dafür, dass keine unbefugten Personen Zutritt erhalten und dass Ihr Eigentum sicher ist.",
-    image: "/about.jpg",
+    image: "/object.jpg",
+  },
+  {
+    name: "Baustellenbewachung",
+    role: "Unser Sicherheitspersonal überwacht und schützt Ihre Baustelle rund um die Uhr. Wir sorgen dafür, dass keine unbefugten Personen Zutritt erhalten und dass Ihr Eigentum sicher ist.",  
+    image: "/baustelle.jpg",
   },
   {
     name: "Event-Sicherheit und Veranstaltungsschutz",
     role: "Wir sorgen für die Sicherheit Ihrer Gäste und Mitarbeiter bei Veranstaltungen aller Art. Unser Sicherheitspersonal ist geschult und erfahren im Umgang mit Menschenmengen und sorgt dafür, dass Ihre Veranstaltung reibungslos abläuft.",
-    image: "/about1.jpg",
+    image: "/event.jpg",
   },
   {
     name: "Personenschutz und Begleitschutz",
     role: "Unser Personenschutzteam sorgt dafür, dass Sie sich sicher fühlen, egal wo Sie sind. Wir begleiten Sie zu Terminen, Veranstaltungen oder auf Reisen und schützen Sie vor möglichen Gefahren.",
-    image: "/about2.jpg",
+    image: "/persoenlich.jpg",
   },
   {
-    name: "Brandschutz und Pförtnerdienste",
-    role: "Unser Brandschutzteam sorgt dafür, dass Ihr Gebäude im Brandfall schnell evakuiert wird und dass Ihre Mitarbeiter und Gäste sicher sind. Unsere Pförtnerdienste übernehmen die Kontrolle des Zutritts zu Ihrem Gebäude und sorgen dafür, dass nur autorisierte Personen eintreten.",
-    image: "/about3.jpg",
+    name: "Brandwache",
+    role: "Unsere Brandwache sorgt dafür, dass Ihr Gebäude oder Ihre Baustelle vor Bränden geschützt ist. Wir überwachen den Brandschutz und greifen bei Bränden sofort ein, um Schaden von Ihrem Eigentum abzuwenden und Menschenleben zu retten.",
+    image: "/brandwache.jpg",
   },
   {
-    name: "Empfangsdienste und Haudhüter",
+    name: "Empfangsdienste, Haushütedienste und Pförtnerdienste ",
     role: "Unsere Empfangsdienste sorgen für einen professionellen Empfang Ihrer Gäste und Mitarbeiter. Unsere Sicherheitsberatung hilft Ihnen dabei, Sicherheitslücken in Ihrem Unternehmen zu identifizieren und zu schließen.",
-    image: "/about.jpg",
+    image: "/empfang.jpg",
   },
   {
-    name: "Ordnertätigkeiten und Dormen-Service",
-    role: "Unsere Ordnertätigkeiten sorgen für einen reibungslosen Ablauf bei Veranstaltungen und sorgen dafür, dass sich Ihre Gäste sicher fühlen. Unser Dormen-Service übernimmt die Bewachung und den Schutz von Wohnanlagen und sorgt dafür, dass Ihre Bewohner sicher sind.",
-    image: "/about1.jpg",
+    name: "Ordnertätigkeiten",
+    role: "Unsere Ordnertätigkeiten sorgen für die Einhaltung von Regeln und Vorschriften bei Veranstaltungen und in öffentlichen Räumen. Wir sorgen dafür, dass Ihre Gäste sich sicher und wohl fühlen und dass Ihre Veranstaltung reibungslos abläuft.",
+    image: "/ordnertätigkeit.jpg",
   },
   {
     name: "Lade- und Kaufhausdetektive",
     role: "Unsere Lade- und Kaufhausdetektive sorgen dafür, dass Ihre Waren und Ihr Eigentum vor Diebstahl geschützt sind. Wir überwachen Ihr Geschäft und greifen bei Diebstählen sofort ein, um Schaden von Ihrem Unternehmen abzuwenden.",
-    image: "/about2.jpg",
+    image: "/kaufhaus.jpg",
   },
+  {
+    name: "Doormen",
+    role:"Unsere Doormen sorgen für einen professionellen Empfang Ihrer Gäste und Mitarbeiter. Wir überwachen den Zugang zu Ihrem Gebäude und sorgen dafür, dass nur befugte Personen Zutritt erhalten. Unsere Doorman sind geschult und erfahren im Umgang mit Menschen und sorgen dafür, dass sich Ihre Gäste sicher und wohl fühlen.",
+    image: "/doormen.jpg",
+  }
 ];
 
 const TeamSection = () => {
@@ -54,19 +64,19 @@ const TeamSection = () => {
           Mit langjähriger Erfahrung bieten wir Ihnen umfassende
           Sicherheitslösungen für jedes Event und jedes Gebäude.
         </p>
-        <div className="grid md:grid-cols-1 gap-6 bg-gray-200 p-4 rounded-lg">
+        <div className="grid md:grid-cols-1 gap-4  py-4 rounded-lg ">
           {teamMembers.map((member, index) => (
             <div
               key={index}
-              className={`flex flex-col md:flex-row items-center p-4 rounded-2xl transition-all bg-gray-100 pt-10 ${
-                index % 2 === 0 ? "" : "md:flex-row-reverse gap-4"
+              className={`flex flex-col md:flex-row items-center px-4 rounded-2xl transition-all bg-gray-100 pt-10 border-y-1 border-gray-300 ${
+                index % 2 === 0 ? "" : "md:flex-row-reverse gap-4 justify-end"
               }`}
             >
-              <div className="w-full md:w-1/2 pr-6 mb-4 md:mb-0 h-[450px]">
+              <div className="w-full md:w-1/2 pr-6 mb-4 md:mb-0 h-[370px] md:h-[420px] lg:w-[520px] lg:h-[520px]">
                 <img
                   src={member.image}
                   alt={member.name}
-                  className="mx-auto max-w-full object-cover h-[400px] rounded-2xl shadow-lg"
+                  className="mx-auto w-[350px] h-[350px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] object-cover rounded-2xl shadow-lg"
                 />
               </div>
               <div className="w-full flex flex-col text-start gap-6 md:w-1/2 pl-6">

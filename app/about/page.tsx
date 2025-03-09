@@ -25,14 +25,12 @@ const Page = () => {
       <div className="flex flex-col items-center justify-center gap-4 mt-10 text-center">
         <h1
           className="text-5xl font-bold text-[#013766] border-b-4 border-yellow-300 pb-2"
-       
           ref={textRef}
         >
           ENTOP
         </h1>
         <p
           className="text-xl text-gray-700 max-w-2xl border-b-4 pb-2 border-yellow-300"
-      
           ref={textRef}
         >
           Wir sind ein engagiertes Team, das Sicherheit und Vertrauen schafft.
@@ -106,10 +104,13 @@ const Page = () => {
             transition={{ duration: 0.8 }}
           >
             ENTOP Sicherheit ist ein Sicherheitsdienstleister, der sich auf die
-            Bereiche Objektschutz, Veranstaltungsschutz, Personenschutz,
-            Empfangsdienste und Sicherheitsberatung spezialisiert hat. Wir
-            bieten Ihnen individuelle Sicherheitskonzepte, die exakt auf Ihre
-            Bedürfnisse zugeschnitten sind.
+            Bereiche Gebäudeschutz/Objektschutz, Baustellenbewachung,
+            Event-Sicherheit und Veranstaltungsschutz, Personenschutz und
+            Begleitschutz, Brandwache, Empfangsdienste, Haushütedienste und
+            Pförtnerdienste, Ordnertätigkeiten, Lade- und Kaufhausdetektive und
+            Doormen spezialisiert hat. Wir bieten Ihnen individuelle
+            Sicherheitskonzepte, die exakt auf Ihre Bedürfnisse zugeschnitten
+            sind.
           </motion.p>
           <motion.p
             className="text-lg text-gray-700 leading-relaxed"
