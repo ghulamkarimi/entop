@@ -15,11 +15,12 @@ return (
         </span>
 
         <Link
-          href="tel:0800123456"
+          href="tel:+4917662919092
+"
           className="flex items-center gap-2 hover:text-yellow-300"
         >
           <Phone size={16} />
-          <p>0800 123 456</p>
+          <p>+49 176 629 190 92</p>
         </Link>
 
         <Link

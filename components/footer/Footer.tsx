@@ -23,10 +23,10 @@ const Footer = () => {
           <div>
             <h3 className="text-2xl font-semibold mb-4">Über uns</h3>
             <p className="text-gray-400 text-sm">
-              <span className="text-yellow-300 font-bold">ENTOP</span> bietet erstklassige Dienstleistungen und Produkte, die auf
-              Ihre Bedürfnisse zugeschnitten sind. Unser Team steht Ihnen
-              jederzeit zur Verfügung, um Ihnen zu helfen und Ihre Fragen zu
-              beantworten.
+              <span className="text-yellow-300 font-bold">ENTOP</span> bietet
+              erstklassige Dienstleistungen und Produkte, die auf Ihre
+              Bedürfnisse zugeschnitten sind. Unser Team steht Ihnen jederzeit
+              zur Verfügung, um Ihnen zu helfen und Ihre Fragen zu beantworten.
             </p>
           </div>
 
@@ -40,22 +40,34 @@ const Footer = () => {
                 </a>
               </li>
               <li>
-                <a href="/about" className="text-gray-400 hover:text-yellow-500">
+                <a
+                  href="/about"
+                  className="text-gray-400 hover:text-yellow-500"
+                >
                   Unser Unternehmen
                 </a>
               </li>
               <li>
-                <a href="/kontakt" className="text-gray-400 hover:text-yellow-500">
+                <a
+                  href="/kontakt"
+                  className="text-gray-400 hover:text-yellow-500"
+                >
                   Unsere Leistungen
                 </a>
               </li>
               <li>
-                <a href="/datenschutz" className="text-gray-400 hover:text-yellow-500">
+                <a
+                  href="/datenschutz"
+                  className="text-gray-400 hover:text-yellow-500"
+                >
                   Jobs
                 </a>
               </li>
               <li>
-                <a href="/impressum" className="text-gray-400 hover:text-yellow-500">
+                <a
+                  href="/impressum"
+                  className="text-gray-400 hover:text-yellow-500"
+                >
                   Ansprechpartner
                 </a>
               </li>
@@ -65,7 +77,9 @@ const Footer = () => {
           {/* Kontakt */}
           <div>
             <h3 className="text-2xl font-semibold mb-4">Kontakt</h3>
-            <p className="text-gray-400 text-sm mb-2">Erreichen Sie uns über:</p>
+            <p className="text-gray-400 text-sm mb-2">
+              Erreichen Sie uns über:
+            </p>
             <ul>
               <li>
                 <Link href="#" className="text-gray-400">
@@ -73,12 +87,15 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link href="tel:+49 123 456 789" className="text-gray-400">
-                  📞 +49 123 456 789
+                <Link href="tel:+4917662919092" className="text-gray-400">
+                  📞 +49 176 629 190 92
                 </Link>
               </li>
               <li>
-                <Link href="mailto:entop.sicherheit@hotmail.com" className="text-gray-400">
+                <Link
+                  href="mailto:entop.sicherheit@hotmail.com"
+                  className="text-gray-400"
+                >
                   ✉️ entop.sicherheit@hotmail.com
                 </Link>
               </li>

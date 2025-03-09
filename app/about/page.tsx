@@ -1,9 +1,11 @@
 "use client"
 import { motion, useInView } from "framer-motion";
-import { Check } from "lucide-react";
 import { useRef } from "react";
+import { Check } from "lucide-react";
+ 
 
 const Page = () => {
+  
   const imgRef = useRef(null);
   const imgInView = useInView(imgRef, { amount: 0.2 });
   const textRef = useRef(null);
