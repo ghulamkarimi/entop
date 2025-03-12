@@ -32,7 +32,7 @@ return (
         </Link>
 
         <Link
-          href="https://facebook.com"
+          href="https://www.instagram.com/entop_sicherheit?igsh=ZGNzaGV4cW9lNDlr&utm_source=qr"
           className="hidden md:flex items-center gap-2 hover:text-yellow-300"
         >
           <Facebook size={16} />

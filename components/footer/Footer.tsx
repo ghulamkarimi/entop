@@ -113,7 +113,7 @@ const Footer = () => {
             </ul>
             <div className="mt-4">
               <a
-                href="https://www.facebook.com"
+                href="https://www.facebook.com/share/18o2PXdqD5/?mibextid=LQQJ4d"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-yellow-500 mr-4"
@@ -121,7 +121,7 @@ const Footer = () => {
                 Facebook
               </a>
               <a
-                href="https://www.instagram.com"
+                href="https://www.instagram.com/entop_sicherheit?igsh=ZGNzaGV4cW9lNDlr&utm_source=qr"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-400 hover:text-yellow-500"
