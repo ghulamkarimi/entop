@@ -1,33 +1,32 @@
-
 "use client";
 import { Star, UserCircle } from "lucide-react";
 import { motion } from "framer-motion";
 
 const reviews = [
   {
-    name: "Johanna Müller",
     description:
-      "Ein wirklich erstklassiger Service! Das Team war sehr freundlich und professionell. Ich habe mich jederzeit gut aufgehoben gefühlt und werde den Service definitiv weiterempfehlen.",
+      "Unser Kundenservice bietet eine stets freundliche und professionelle Kommunikation. Wir legen großen Wert darauf, unseren Kunden zuzuhören und ihre Bedürfnisse schnell und effizient zu erfüllen.",
+    service: "Kundenservice und Kommunikation",
   },
   {
-    name: "Daniel Schmidt",
     description:
-      "Schnelle Abwicklung und top Kundenservice. Ich war beeindruckt von der Effizienz und der Aufmerksamkeit des Teams. Sehr zuverlässig und definitiv eine Empfehlung wert!",
+      "Die Abwicklung unserer Dienstleistungen erfolgt schnell und zuverlässig. Wir garantieren eine zügige Bearbeitung Ihrer Anfragen und bieten stets Lösungen, die genau auf Ihre Anforderungen abgestimmt sind.",
+    service: "Effizienz und schnelle Abwicklung",
   },
   {
-    name: "Elena Fischer",
     description:
-      "Hervorragende Betreuung und sehr sichere Abläufe. Ich habe mich rundum wohl und sicher gefühlt. Vielen Dank für diesen tollen Service!",
+      "Mit unseren Sicherheitsdiensten gewährleisten wir einen hohen Standard der Betreuung. Unsere Sicherheitsmaßnahmen sind effektiv und garantieren Sicherheit und Schutz für alle Beteiligten.",
+    service: "Sicherheitsdienstleistungen und Betreuung",
   },
   {
-    name: "Marco Lehmann",
     description:
-      "Freundliches Personal, schnelle Reaktionszeiten und ein professionelles Umfeld. Es ist beruhigend zu wissen, dass man hier in guten Händen ist.",
+      "Unsere Reaktionszeiten sind bemerkenswert schnell. In Notfällen sind wir innerhalb kürzester Zeit vor Ort, um Ihnen schnell und effizient zu helfen.",
+    service: "Reaktionszeiten und professionelle Betreuung",
   },
   {
-    name: "Sophia Weber",
     description:
-      "Exzellenter Service mit einem hohen Maß an Professionalität! Die Kommunikation war super, und alles lief reibungslos. Sehr empfehlenswert!",
+      "Unsere Kommunikation ist klar und transparent. Wir garantieren einen reibungslosen Ablauf aller Dienstleistungsschritte und informieren unsere Kunden immer rechtzeitig über den Status ihrer Anfragen.",
+    service: "Kommunikation und Professionalität",
   },
 ];
 
@@ -55,6 +54,7 @@ const Rezension = () => {
                 <UserCircle size={64} className="text-yellow-300" />
               </div>
               <p className="text-gray-600 leading-relaxed">{review.description}</p>
+              <p className="text-sm text-gray-500 italic mt-2">Bewertete Leistung: <strong>{review.service}</strong></p>
               <div className="flex justify-center gap-1 text-yellow-500 my-4">
                 {Array(5)
                   .fill(0)
@@ -62,7 +62,6 @@ const Rezension = () => {
                     <Star key={i} size={20} fill="currentColor" stroke="none" />
                   ))}
               </div>
-              <p className="font-bold text-gray-900">{review.name}</p>
             </motion.div>
           ))}
         </div>
@@ -81,6 +80,7 @@ const Rezension = () => {
                 <UserCircle size={64} className="text-yellow-300" />
               </div>
               <p className="text-gray-600 leading-relaxed">{review.description}</p>
+              <p className="text-sm text-gray-500 italic mt-2">Bewertete Leistung: <strong>{review.service}</strong></p>
               <div className="flex justify-center gap-1 text-yellow-500 my-4">
                 {Array(5)
                   .fill(0)
@@ -88,7 +88,6 @@ const Rezension = () => {
                     <Star key={i} size={20} fill="currentColor" stroke="none" />
                   ))}
               </div>
-              <p className="font-bold text-gray-900">{review.name}</p>
             </motion.div>
           ))}
         </div>
