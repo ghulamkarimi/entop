@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json}\"",
     "build": "next build",
-    "start": "next start",
+    "format": "prettier --write \"**/*.{js,jsx,ts,tsx,css,md,json}\"",
+    "start": "next start -p 3000",
+    "setup": "npm i && npm run build && pm2 start --name mainsite npm -- start --update-env --time && pm2 save",
+    "deploy": "git pull --no-rebase && npm i && npm run build && pm2 restart mainsite --update-env --time && pm2 save",
     "lint": "next lint"
   },
   "dependencies": {
