@@ -1,7 +1,5 @@
 "use client";
 
-
-
 const teamMembers = [
   {
     name: "Gebäudeschutz/Objektschutz",
@@ -58,11 +56,11 @@ const TeamSection = () => {
           Unser Sicherheitsteam bei{" "}
           <div className="flex justify-center items-center">
     
-          <p className="bg-[#013766] px-2 py-2 flex justify-center gap-1 items-center rounded-lg  text-white">
+          <div className="bg-[#013766] px-2 py-2 flex justify-center gap-1 items-center rounded-lg  text-white">
           <div className="w-6 border-b-3 border-yellow-300" ></div>
             ENTOP
             <div className="w-6 border-b-3 border-yellow-300" ></div>
-          </p>
+          </div>
           </div>
         </h2>
         <p className="text-lg mb-12 border-b-4 border-yellow-300 max-w-3xl mx-auto pb-4">
