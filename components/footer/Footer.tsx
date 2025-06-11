@@ -103,11 +103,11 @@ const Footer = () => {
               </li>
               <li>
                 <a
-                  href="mailto:entop.sicherheit@hotmail.com"
+                  href="mailto:info@entop-sicherheit.com"
                   className="text-gray-400 flex items-center gap-2 hover:text-yellow-500"
                 >
                   <Mail className="text-yellow-500" size={20} />
-                  <span>entop.sicherheit@hotmail.com</span>
+                  <span>info@entop-sicherheit.com</span>
                 </a>
               </li>
             </ul>

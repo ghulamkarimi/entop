@@ -28,7 +28,7 @@ return (
           className="hidden md:flex items-center gap-2 hover:text-yellow-300"
         >
           <Mail size={16} />
-          <p>entop.sicherheit@hotmail.com</p>
+          <p>info@entop-sicherheit.com</p>
         </Link>
 
         <Link

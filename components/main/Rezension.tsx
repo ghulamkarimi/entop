@@ -2,8 +2,8 @@
 import {
   MessageCircle,
   Zap,
-  ShieldCheck,
-  AlarmClock,
+  RefreshCcw ,
+  Lock ,
   Briefcase,
 } from "lucide-react";
 import { motion } from "framer-motion";
@@ -30,15 +30,15 @@ const reviews = [
   },
   {
     description:
-      "Mit unseren Sicherheitsdiensten gewährleisten wir einen hohen Standard der Betreuung. Unsere Sicherheitsmaßnahmen sind effektiv und garantieren Sicherheit und Schutz für alle Beteiligten.",
-    service: "Sicherheitsdienstleistungen und Betreuung",
-    icon: ShieldCheck,
+      "Verlassen Sie sich auf unsere zuverlässigen Sicherheitsdienste, um ein Höchstmaß an Sicherheit und Schutz zu gewährleisten.",
+    service: "Zuverlässigkeit",
+    icon: Lock,
   },
   {
     description:
-      "Unsere Reaktionszeiten sind bemerkenswert schnell. In Notfällen sind wir innerhalb kürzester Zeit vor Ort, um Ihnen schnell und effizient zu helfen.",
-    service: "Reaktionszeiten und professionelle Betreuung",
-    icon: AlarmClock,
+      "Verlassen Sie sich auf unsere zuverlässigen Sicherheitsdienste, um ein Höchstmaß an Sicherheit und Schutz zu gewährleisten.",
+    service: "Flexibilität",
+    icon: RefreshCcw ,
   },
   
 ];

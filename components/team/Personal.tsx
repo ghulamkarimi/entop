@@ -16,7 +16,7 @@ const person = [
       "Rechnungsstellung"
     ],
     phone: "+49 176 629 190 92",
-    email: "entop.sicherheit@hotmail.com",
+    email: "info@entop-sicherheit.com",
   },
 ];
 

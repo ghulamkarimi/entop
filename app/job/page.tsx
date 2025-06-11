@@ -1,4 +1,4 @@
-import { div } from "framer-motion/client";
+"use client";
 import { Mail, Phone } from "lucide-react";
 import Link from "next/link";
 
@@ -48,13 +48,13 @@ const Page = () => {
 
               <div>
                 <Link
-                  href="mailto:entop.sicherheit@hotmail.com"
+                  href="mailto:info@entop-sicherheit.com"
                  className="flex items-center font-bold gap-2 "
                 >
                   <span className="text-yellow-500 ">
                     <Mail size={32} className=" animate-pulse" />
                   </span>
-                  <p> entop.sicherheit@hotmail.com</p>
+                  <p>info@entop-sicherheit.com</p>
                 </Link>
               </div>
             </div>
